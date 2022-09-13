@@ -57,7 +57,7 @@
         <section class="main-section">
             <div class="container">
             <h1 class="main-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <button type="button" class="order">Замовити послугу</button>
+            <button data-modal-open type="button" class="order">Замовити послугу</button>
             </div>
             </section>
         </div>
@@ -393,8 +393,20 @@
     <body>
         <!-- Вся твоя розмітка, включно з розміткою модалки -->
       
-        <!-- Ставимо перед закриваючим тегом body -->
-        <script src="./js/modal.js"></script>
+
+        <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+<button class="button-close" data-modal-close>
+    <svg class="modal-icon-close" width="20" height="20">
+        <use class="modal-close" 
+        href="./images/symbol-defs.svg#close-icon"
+        width="11" height ="11">
+        </use>
+    </svg>
+</button>
+</div>
+        </div>
+        <script src="./js/modal.js"></script> 
       </body>
 </body>
 </html>
